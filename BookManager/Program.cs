@@ -38,22 +38,6 @@ namespace BookManager
                     lib.FilterBookByCategory();
                 if (input == "exit")
                     Environment.Exit(0);
-
-                if(input == "asd")
-                {
-                    Library.Book book = new Library.Book();
-                    book.name = "Rick's Adventures";
-                    book.author = "Rick P.";
-                    book.category = "Adventure";
-                    book.language = "English";
-                    book.publicationDate = DateTime.Now;
-                    book.isbn = "135-351-3131";
-                    book.isTaken = false;
-
-                    lib.AddBook(book);
-
-
-                    lib.DeleteBook(0);
                 }
             }
         }
